@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Inter, Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const hanken = Hanken_Grotesk({
@@ -35,6 +36,15 @@ export default function RootLayout({
       className={`${hanken.variable} ${inter.variable} ${geist.variable}`}
     >
       <body className="antialiased">{children}</body>
+      <Script
+        defer
+        data-domain="peoplencoagency.com"
+        src="http://people-and-co-site-plausible-3dead6-31-97-45-52.sslip.io/js/script.file-downloads.outbound-links.tagged-events.js"
+        strategy="afterInteractive"
+      />
+      <Script id="plausible-init" strategy="afterInteractive">{`
+        window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
+      `}</Script>
     </html>
   );
 }
