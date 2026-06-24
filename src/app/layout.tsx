@@ -39,7 +39,7 @@ export default function RootLayout({
       <Script
         defer
         data-domain="peoplencoagency.com"
-        src="http://people-and-co-site-plausible-3dead6-31-97-45-52.sslip.io/js/script.file-downloads.outbound-links.tagged-events.js"
+        src="https://people-and-co-site-plausible-3dead6-31-97-45-52.sslip.io/js/script.file-downloads.outbound-links.tagged-events.js"
         strategy="afterInteractive"
       />
       <Script id="plausible-init" strategy="afterInteractive">{`
